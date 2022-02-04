@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* PRIMERA PARTE */
+
+.container{
+    width: 100%;
+    min-height: 80vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #472E56;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.barra_principal{
+    display: flex;
+    text-align: right;
+    font-weight: 600;
+}
+
+.barra_principal_1{
+    background-color: #FF7777;
+    padding: 0.5rem;
+    padding-left:3rem;
+    padding-right: 3rem;
+    border-radius: 3rem;
+}
+
+.barra_principal ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+
+.barra_principal ul li a{
+    text-decoration: none;
+    color: white;
+    font-size:14PX;
+}
+
+.barra_principal ul li a:hover{
+    color: #472E56;
+}
+
+.primero{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 50%; */
+    display: flex;
+    align-items: center;
+    width: 50%;
+    align-items: center;
+    color: white;
+    padding-top: 3rem;
+}
+
+.plataformas{
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    font-size:14PX;
+    text-align: center;
+}
+
+/* .plataformas a{
+    background-color: #FF7777;
+    padding: 0.5rem;
+    padding-left:3rem;
+    padding-right: 10rem;
+    border-radius: 3rem;
+
+} */
+
+.a{
+    gap: 2rem;
+    padding-bottom: 0.8rem;
+    padding-top: 1rem;
+    background-color: #FF7777;
+    padding-left:3rem;
+    padding-right: 3rem;
+    border-radius: 3rem;
+    text-decoration: none;
+}
+
+.b{
+    padding: .8rem;
+    padding-top: 1rem;
+    background-color: #FF7777;
+    padding-left:3rem;
+    padding-right: 3rem;
+    border-radius: 3rem;
+}
+
+.c{
+    padding: .8rem;
+    padding-top: 1rem;
+    background-color: #FF7777;
+    padding-left:3rem;
+    padding-right: 3rem;
+    border-radius: 3rem;
+}
+
+/* SEGUNDA PARTE */
+
+.contenedor_2{
+    width: 100%;
+    min-height: 80vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+}
+
+.parte_arriba{
+    margin-top: 3rem;
+}
+
+.titulo_1{
+    color: #472E56;
+    text-align: center;
+    font-size: 35px;
+}
+
+.subtitulo_1{
+    color: #7772D3;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.contenedor_tarjetas{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+}
+.card{
+    background-color: #7772d377;
+    border-radius: 2rem;
+    display: flex;
+    margin: 1.5rem;
+    overflow: hidden;
+    width: 30rem;
+    height: 15rem;
+}
+
+
+.left-column{
+    padding: 2rem;
+    max-width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagen{
+    display: inline-block;
+    max-width: 10rem;
+}
+/* .cards-item_3{
+    display: flex;
+    align-items: center;
+	width: 50%;
+	height: 20rem;
+	padding:1rem;
+    background-color: #7772d377;
+	box-sizing: border-box;
+	margin-top: 3rem;
+	border-radius: 2rem
+}  */
+
+
+
+
+/* TERCERA PARTE */
+
+.contenedor_3{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+    padding-left: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #472E56;
+}
+
+.conjunto_3{
+    width: 50%;
+    align-items: center;
+    color: white;
+}
+
+.titulo_3{
+    color: white;
+    text-align: left;
+    font-size: 35px;
+}
+
+.texto_3{
+    padding-top: 2rem;
+}
+
+
+/* CUARTA PARTE */
+
+.contenedor_4{
+    width: 100%;
+    min-height: 80vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+}
+
+.cards-item_4{
+	display: flex;
+    align-items: center;
+	width: 100%;
+	height: 20rem;
+	padding:1rem;
+    background-color: #7772d377;
+	box-sizing: border-box;
+	margin-top: 3rem;
+	border-radius: 2rem
+}
+
+.contenido_4{
+    display: inline-block;
+    align-items: flex-end;
+}
+
+.titulo_4{
+    color: #472E56;
+    font-size: 35px;
+    padding-left: 2rem;
+}
+
+.texto_4{
+    color: #472E56;
+    font-size: 15px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
