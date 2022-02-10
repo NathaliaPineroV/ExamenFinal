@@ -4,9 +4,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
 /*---utilidades---*/
 
@@ -18,6 +15,12 @@ html{
 @media screen and (min-width: 150rem) {
     .margenes-centrados{
         max-width: 140rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .margenes-centrados{
+        padding-inline: 1rem;
     }
 }
 
@@ -45,6 +48,8 @@ html{
 
 /* -------------------PRIMERA PARTE--------------------*/
 
+
+
 .main-header{
     background-color: #472E56;
 }
@@ -56,7 +61,7 @@ html{
 }
 @media screen and (max-width: 600px) {
     .navbar{
-    flex-direction: column;
+        flex-direction: column;
     }
 }
 
@@ -79,7 +84,7 @@ html{
     padding-right: 3rem;
     border-radius: 3rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .barra_principal_1{
     padding-left:1rem;
     padding-right:1rem;
@@ -93,7 +98,7 @@ html{
     padding-left: 1.2rem;
     padding-right: 1.2rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .barra_principal ul li{
     padding-inline: .5rem;
     }
@@ -120,11 +125,19 @@ html{
     width: 100%;
 }
 
+
 /*-----------------BANNER------------------*/
+
 
 .main-banner{
     background-color: #472E56;
     display: flex;
+}
+@media screen and (max-width: 800px){ 
+    .main-banner{
+        padding-block: 2rem;
+        overflow: hidden;
+    }
 }
 
 .main-banner .columna_1 h1{
@@ -143,17 +156,16 @@ html{
     padding-right: 3rem;
     border-radius: 3rem;
 }
+@media screen and (max-width: 600px) {
+    .plataformas li{
+       padding: 0.5rem;
+    }
+}
+
 .plataformas li:hover{
     background: #7772D3;
     transition: 1s;
 }
-/* @media screen and (max-width: 800px) {
-    .plataformas li{
-        margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        padding-top: 0.5rem;
-    }
-} */
 
 .plataformas li a{
     text-decoration: none;
@@ -161,14 +173,13 @@ html{
     font-size: 14px;
     font-weight: 600;
 }
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .plataformas li a{
-        font-size: 12px;
+       font-size: 12px;
     }
-} */
+}
 
 .main-banner .columna_2 img{
-    max-width: 50vw;
     width: 35rem;
 }
 
@@ -176,6 +187,27 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+    .primero{
+        padding: 2rem;
+    }
+}
+
+.primero .columna_2{
+    padding: 3rem;
+}
+
+.primero .columna_2 img{
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .primero .columna_2{
+        padding: 0;
+    }
+    .primero .columna_2 img{
+        transform: translateX(50%) scale(1.9);
+    }
 }
 
 .plataformas{
@@ -214,11 +246,7 @@ html{
     text-align: center;
     padding-top: .5rem;
 }
-@media(max-with: 700px){
-    .subtitulo_1{
-       color: aqua;
-    }
-}
+
 
 .contenedor_tarjetas{
     padding: 2rem;
@@ -248,10 +276,20 @@ html{
 .card:hover{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-@media(max-with: 700px){
+@media screen and (max-width: 600px){
+    .contenedor_tarjetas{
+        display: block;
+    }
+
     .card{
-        padding: 0.5rem;
-        color: aqua;
+        width: auto;
+        padding: 2rem;
+        border-radius: 1rem;
+        flex-direction: column;
+    }
+
+    .card .imagen{
+        padding-left: 1rem;
     }
 }
 
@@ -266,12 +304,6 @@ html{
     display: inline-block;
     max-width: 10rem;
 }
-
-/* .right-column h1{
-    color: white;
-    font-size: 25px;
-    font-weight: 800;
-} */
 
 .right-column p{
     padding-top: 1rem;
@@ -314,6 +346,11 @@ html{
     min-height: 10vh;
     padding-bottom: 4rem;
 }
+@media screen and (max-width: 700px) {
+    .contenedor_2 .descargar{
+        padding-bottom: 3rem;
+    }
+}
 
 .contenedor_2 .descargar a{
     text-decoration: none;
@@ -325,11 +362,17 @@ html{
     border-radius: 3rem;
     text-align: center;
 }
+@media screen and (max-width: 700px) {
+    .contenedor_2 .descargar a{
+        padding-inline: 3rem;
+    }
+}
 
 .contenedor_2 .descargar a:hover{
     background: #7772D3;
     transition: 1s;
 }
+
 
 /*----------------------TERCERA PARTE--------------------*/
 
@@ -337,118 +380,122 @@ html{
 .second-banner{
     background-color: #472E56;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    height: 50vh;
+}
+@media screen and (max-width: 800px){ 
+    .second-banner{
+        padding-block: 2rem;
+        height: 80vh;
+        /* overflow: hidden; */
+    }
 }
 
 .second-banner .columna_1 h1{
+    text-align: left;
     margin-bottom: 2rem;
     color: white;
-    margin-right: 2rem;
 }
-@media screen and (max-width: 700px) {
-    .second-banner .columna_1 p{
+
+.second-banner .columna_1 h2{
+    text-align: left;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+@media screen and (max-width: 800px){ 
+    .second-banner .columna_1 h2{
+        font-size: 16px;
+    }
+}
+
+.second-banner p{
+    color: white;
+    font-size: 15px;
+}
+@media screen and (max-width: 800px){ 
+    .second-banner p{
         font-size: 12px;
     }
 }
 
-.second-banner .columna_1 p{
-    margin-bottom: 3rem;
-    color: white;
-    font-size: 15px;
-    margin-right: 2rem;
-}
-@media screen and (max-width: 700px) {
-    .second-banner .columna_1 p{
-       font-size: 12px;
-    }
-}
-
-.second-banner .columna_1 a{
-    margin-bottom: .5rem;
-    gap: 2rem;
-    padding-bottom: .8rem;
-    padding-top: .8rem;
-    background-color: #7772D3;
-    padding-left:2rem;
-    padding-right: 2rem;
-    border-radius: 3rem;
-    font-weight: 600;
-    font-size: 15px;
-} 
-
-.second-banner .btn a:hover{
-    background: #FF7777;
-    transition: 1s;
-}
-
-.columna_1 a{
-    text-decoration: none;
-    color: white;
-}
-
-.columna_1 h2{
-    font-weight: 600;
-    color: white;
-    padding-bottom: 1rem;
-    font-size: 20px;
-    margin-right: 2rem;
-}
-@media screen and (max-width: 800px) {
-    .columna_1 h2{
-        font-size: 15px;
-    }
-}
-
-.second-banner .columna_1 .btn{
-    display: flex;
-    /* flex-direction: column; */
-    text-align: left;
-    align-items: left;
-    padding-right:2rem;
-}
-
-.second-banner .columna_1 .btn a{
-    display: flex;
-    text-decoration: none;
-    font-weight: 600;
-    color: white;
-    background-color: #7772D3;
-    padding: 1rem;
-    padding-inline:3rem;
-    border-radius: 3rem;
+.second-banner .columna_2 img{
+    display: inline-block;  
 }
 
 .tercero{
-
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+    .tercero{
+        padding:1.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
-.columna_2{
-    width: 50%;
-    align-items: center;
+.tercero .columna_2{
+    padding-left: 4rem;
+}
+
+.tercero .columna_2 img{
+    width: 100%;
+    transform: translateX(0%) scale(1.4);
+
+}
+@media screen and (max-width: 600px) {
+    .tercero .columna_2{
+        padding: 0;
+    }
+    .tercero .columna_2 img{
+        transform: translateX(50%) scale(1.5);
+        /* display: flex;
+        flex-direction: column-reverse; */
+        width: 50%;
+    }
+}
+
+.tercero .btn{
+    padding-top: 3rem;
+}
+@media screen and (max-width: 600px) {
+    .tercero .btn{
+        padding: 1rem;
+        padding-inline: 3rem;
+        padding-top: 5rem;
+    }
+}
+
+.tercero .btn a{
+    text-decoration: none;
+    font-weight: 600;
     color: white;
+    background-color:#7772D3;
+    padding: 1rem;
+    padding-inline: 2rem;
+    border-radius: 3rem;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .tercero .btn a{
+        padding: 1rem;
+        padding-inline: 2.5 rem;
+    }
 }
 
-.texto_3{
-    padding-top: 2rem;
-    font-size: 15px;
+.tercero .btn :hover{
+    background-color: #FF7777;
+    transition: 1s;
+}
+
+.tercero p{
     padding-right: 2rem;
 }
 
-.second-banner .columna_2 img{
-    max-width: 50vw;
-    width: 35rem;
-    min-width: 5vw;
-}
-
-
 
 /*----------------------CUARTA PARTE -----------------------*/
+
 
 .contenedor_4{
     background-color: white;
@@ -470,6 +517,11 @@ html{
 	border-radius: 2rem;
     background-color: #7772d377;
 }
+@media screen and (max-width: 600px) {
+    .contenedor_4 .tarjeta{
+        margin-top: 3rem;
+    }
+}
 
 .contenido_4{
     align-items: center;
@@ -479,6 +531,12 @@ html{
     color: #472E56;
     padding-inline: 1.5rem;
     margin-bottom: 1rem;
+}
+@media screen and (max-width: 700px) {
+    .titulo_4{
+       padding-inline: 0rem;
+       margin-bottom: 0;
+    }
 }
 
 .texto_4{
@@ -490,6 +548,7 @@ html{
 @media screen and (max-width: 700px) {
     .texto_4{
        font-size: 12px;
+       padding-inline: 0rem;
     }
 }
 
@@ -533,6 +592,13 @@ html{
     padding-right: 3rem;
     border-radius: 3rem;
 }
+@media screen and (max-width: 600px) {
+    .barra_contactos_1{
+    padding-left:1rem;
+    padding-right:1rem;
+    display: flex;
+    }
+}
 
 .barra_contactos ul li {
     align-items: center;
@@ -540,6 +606,12 @@ html{
     display: block;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
+}
+@media screen and (max-width: 600px) {
+    .barra_contactos ul li{
+    padding: 0.6rem;
+    padding-block: 0rem;
+    }
 }
 
 .barra_contactos ul li::after {
@@ -562,7 +634,9 @@ html{
     font-size:14PX;
     align-items: center;
 }
+@media screen and (max-width: 600px) {
+    .barra_contactos ul li a{
+    font-size: 12px;
+    }
+}
 
-/* .barra_contactos ul li a:hover{
-    color: #472E56;
-} */
