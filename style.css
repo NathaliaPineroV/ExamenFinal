@@ -475,9 +475,7 @@
 }
 @media screen and (max-width: 600px) {
     .tercero .btn{
-        padding: 1rem;
-        padding-inline: 3rem;
-        padding-top: 5rem;
+        align-items: center;
     }
 }
 
@@ -495,12 +493,20 @@
     .tercero .btn a{
         padding: 1rem;
         padding-inline: 2.5 rem;
+        align-items: center;
+        text-align: center;
     }
 }
 
 .tercero .btn :hover{
     background-color: #FF7777;
     transition: 1s;
+}
+
+@media screen and (max-width: 600px) {
+    .tercero .columna_1 .btn{
+        text-align: center;
+    }
 }
 
 .tercero p{
