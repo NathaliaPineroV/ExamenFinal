@@ -179,9 +179,9 @@
     }
 }
 
-.main-banner .columna_2 img{
+/* .main-banner .columna_2 img{
     width: 35rem;
-}
+} */
 
 .primero{
     display: flex;
@@ -199,7 +199,7 @@
 }
 
 .primero .columna_2 img{
-    width: 100%;
+    width: 80%;
 }
 @media screen and (max-width: 600px) {
     .primero .columna_2{
@@ -247,7 +247,6 @@
     padding-top: .5rem;
 }
 
-
 .contenedor_tarjetas{
     padding: 2rem;
     align-items: center;
@@ -286,10 +285,7 @@
         padding: 2rem;
         border-radius: 1rem;
         flex-direction: column;
-    }
-
-    .card .imagen{
-        padding-left: 1rem;
+        align-items: center;
     }
 }
 
@@ -298,6 +294,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+    .left-column{
+        display: inline-flex;
+        align-items: center;
+    }
 }
 
 .card .imagen{
@@ -385,7 +387,7 @@
 @media screen and (max-width: 800px){ 
     .second-banner{
         padding-block: 2rem;
-        height: 80vh;
+        height: 75vh;
         /* overflow: hidden; */
     }
 }
@@ -394,6 +396,11 @@
     text-align: left;
     margin-bottom: 2rem;
     color: white;
+}
+@media screen and (max-width: 800px){ 
+    .second-banner .columna_1 h1{
+        margin-bottom: 1rem;
+    }
 }
 
 .second-banner .columna_1 h2{
@@ -405,6 +412,7 @@
 @media screen and (max-width: 800px){ 
     .second-banner .columna_1 h2{
         font-size: 16px;
+        margin-bottom: .5rem;
     }
 }
 
@@ -432,6 +440,7 @@
         padding:1.5rem;
         display: flex;
         flex-direction: column-reverse;
+        justify-content: space-around;
     }
 }
 
@@ -446,12 +455,11 @@
 }
 @media screen and (max-width: 600px) {
     .tercero .columna_2{
-        padding: 0;
+        padding: 2.4rem;
+        overflow: hidden;
     }
     .tercero .columna_2 img{
         transform: translateX(50%) scale(1.5);
-        /* display: flex;
-        flex-direction: column-reverse; */
         width: 50%;
     }
 }
